@@ -1,0 +1,314 @@
+
+
+body
+{
+    background-color:background-image:url(image/fond.jpg);
+}
+
+body {
+    margin:0;
+  }
+  
+  h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    letter-spacing: 2px;
+    font-size:48px;
+  }
+ 
+  
+  .header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white;
+  }
+ 
+  
+  .inner-header {
+    height:35vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .content {
+    position:relative;
+    height:10vh;
+    text-align:center;
+    background-color: white;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 60s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
+p
+{
+    color:black;
+    font-size: 1em;
+    font-style: normal;
+    font-family: 'Arial',  'Helvetica', 'sans-serif';
+    text-align: justify;
+}
+
+header
+{
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white
+    
+}
+
+header nav ul
+{
+    display: flex;
+    list-style-type: none;
+    flex-direction:row;
+    
+}
+
+nav li
+{
+    margin-right: 60px;
+    align-items: flex-end;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.4em;
+    
+  
+}
+
+nav a
+{
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover
+{
+    font-size: 1.5;
+    color: red;
+    border-bottom: royalblue;
+}
+
+h1
+{
+    color: white;
+    font-size: 1.9em;
+    font-family :'Lato', Arial, Helvetica, sans-serif;
+   
+    text-align: center;
+    padding: 2px;  
+    padding-top: 30px;
+   
+}
+
+h2
+{
+    color: red;
+    font-size: 1.5em;
+    font-weight:lighter;
+    font-family: Crimson Pro;
+    text-align: center;
+    background: black; opacity: 0.8; 
+    margin-top: 7px; 
+}
+
+h3
+{
+    color: rgb(17, 16, 16);
+    font-size: 1.3em;
+    font-family:'Yanone Kaffeesatz';
+    margin: 3px;
+}
+
+
+h4
+{
+    color: red;
+    font-size: 1.1;
+    font-family: sans-serif;
+    font-style: italic;
+    margin: 1px;
+}
+
+
+.Junior
+{
+    color: red;
+}
+
+ul
+{
+    color:black;
+     font-size: 1em;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1:hover
+{
+    color: blue;
+}
+
+h2:hover
+{
+    color: white;
+}
+
+h3:hover
+{
+    text-decoration-line: underline;
+}
+
+section + article
+{
+    display: inline-block;
+    vertical-align:top;
+    width: 30%;
+    margin-bottom: 2%;
+}
+article
+{
+    padding: 2px;
+}
+
+#barre
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+
+#experiences, #competences, #formations
+{
+
+    border-radius: 6px;
+    border-style:solid;
+    box-shadow: 3px 3px 0px gray;
+    flex-direction: column;
+   
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+#acii, #odiwi, #bull
+{
+    display: inline-block;
+    vertical-align:top;
+}
+
+#liseret, #CV
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#liseret
+{
+    width: 10%;
+    margin: 10px;
+    height: 2500px;
+    background-color: violet;
+    border: violet;
+    box-shadow: 3px 3px 0 px black;
+}
+#CV
+{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(181, 71, 255);
+}
+
+@media all and (max-width: 1000px)
+{
+    #bloc_page
+    {
+        width: auto;
+        background-color: yellow;
+        
+    }
+    #liseret 
+    {
+        display:none
+    }
+    #CV
+    {
+        width: auto;
+    }
+    section 
+    {
+        display: inline-block;
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 2%; 
+        padding-left: 1%;       
+    }
+    nav
+    {
+        width: auto;
+    }
+    
+}
+
